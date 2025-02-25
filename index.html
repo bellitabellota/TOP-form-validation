@@ -4,24 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Validation</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <form>
+  <form novalidate>
     <label for="mail">E-Mail:</label>
-    <input type="email" name="mail" id="mail">
+    <input type="email" name="mail" id="mail" required>
 
     <label for="country">Country:</label>
-    <input type="text" name="country" id="country">
+    <input type="text" name="country" id="country" required>
 
     <label for="postal-code">Postal Code:</label>
-    <input type="number" name="postal-code" id="postal-code">
+    <input type="number" name="postal-code" id="postal-code" required>
 
     <label for="password">Password:</label>
-    <input type="password" name="password" id="password">
+    <input type="password" name="password" id="password" required minlength="3">
 
     <label for="password-confirmation">Password Confirmation:</label>
-    <input type="password" name="password-confirmation" id="password-confirmation">
+    <input type="password" name="password-confirmation" id="password-confirmation" required>
 
     <input type="submit" value="Validate">
 
