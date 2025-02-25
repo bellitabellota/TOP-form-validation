@@ -1,9 +1,20 @@
 body {
   background-color: skyblue;
 }
+input:not(:placeholder-shown):valid {
+  background-color: ivory;
+  border: none;
+  outline: 3px solid rgb(96, 211, 50);
+}
 
-/* input:invalid {
+input:not(:placeholder-shown):invalid {
   background-color: ivory;
   border: none;
   outline: 3px solid red;
-} */
+}
+
+input:focus:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 3px solid rgb(236, 223, 100);
+}
